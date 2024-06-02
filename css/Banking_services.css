@@ -1,0 +1,135 @@
+
+html{
+	font-family: 'Roboto',sans-serif;
+	font-size:10px;
+}
+img{
+	width:100%;
+}
+
+.bank {
+	width: 100%;
+	height:100vh;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	background: #eee;
+	padding: 0 1.5rem;
+	padding-top: 180px;
+	padding-bottom: 350px;
+	
+}
+
+.service_2{
+	
+	width: 100%;
+	max-width: 98rem;
+	padding: 5rem;
+	background-color: #fff;
+	box-shadow: 0 1.4rem 8rem rgba(0,0,0,.2);
+	display: flex;
+	align-items:center;
+	border-radius: .8rem;
+}
+.service_2__img{
+	min-width: 35rem;
+	max-width: 35rem;
+	height: 30rem;
+	transform: translateX(-8rem);
+	position: ralative;
+}
+.service_2__img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	border-radius: .8rem;
+}
+.service_2__img::before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-shadow: .5rem .5rem 3rem 1px rgba(0,0,0,.5);
+	border-radius: .8rem;
+	
+}
+.service_2__title{
+	font-size: 2.5rem;
+	margin: 1.5rem 0 2rem;
+	text-transform: uppercase;
+}
+.service_2__text{
+	margin-bottom:3rem;
+	font-size: 1.4rem;
+	color: rgba(0,0,0,.7);
+}
+.service_2__cta{
+	display: inline-block;
+	padding: 1.5rem 3rem;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	color: #fff;
+	background-image: linear-gradient(to right,#4facfe 0%, #00f2fe 100%);
+	border-radius: .8rem;
+	text-decoration: none;
+}
+.service_2__cta:hover{
+	background-image: linear-gradient(to right,#00f2fe 0%, #4facfe 100%);
+}
+@media screen and (max-width: 1068px){
+	.service_2{
+		max-width: 80rem;
+	}
+	
+	.service_2__img{
+		min-width: 30rem;
+		max-width: 30rem;
+	}
+	
+}
+@media screen and (max-width: 868px){
+	.service_2{
+		
+		max-width: 70rem;
+	}
+	
+}
+@media screen and (max-width: 768px){
+	.service_2{
+		padding:2.5rem;
+		flex-direction: column;
+	}
+	.service_2__img{
+		min-width: 100%;
+		max-width: 100%;
+		transform: translate(0, -8rem);
+	}
+	.bank{
+		padding-top:400px;
+		padding-bottom: 450px;
+	}
+}
+.container2{
+	height: 100%;
+	background-image: url("img/bank2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	 background-size: cover;
+}
+.container2 h1{
+	height: 100%;
+	color: #fff;
+	font-size: 3vw;
+	font-family: arial;
+	text-align: center;
+	text-transform: uppercase;
+	background: rgba(0,0,0,0.5);
+	padding:30px;
+	top:50%;
+	
+}
